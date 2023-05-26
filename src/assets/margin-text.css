@@ -1,0 +1,6 @@
+/* text margin */
+@media only screen and (max-width: 600px) {
+  #margin-text {
+    margin-top: 10px;
+  }
+}

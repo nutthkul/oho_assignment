@@ -1,0 +1,39 @@
+.ant-date {
+  height: 43px;
+ $default-border-radius: 6px;
+}
+
+.vue-apexcharts {
+  display: flex;
+  justify-content: center;
+  .apexcharts-legend {
+    padding-left: 0px !important;
+    top: 5px !important;
+    margin-right: 10px;
+  }
+}
+
+//
+.input-field {
+  label {
+    margin-left: 10px;
+    z-index: 1;
+    color: #878a8d;
+  }
+  .label-style {
+    border-radius: 8px;
+    background: #FFF;
+    font-weight: 600;
+    padding: 3px 8px;
+    box-shadow: #e5e8eb 0px 1px 1px, #e5e8eb 0px 0px 0px 1px;
+  }
+  .input-fieldset {
+    margin-top: -10px;
+    padding: 15px 20px 5px 13px;
+    border-radius: 8px;
+  }
+  .form-control:disabled {
+    background-color: #f0f2f5
+  }
+}
+

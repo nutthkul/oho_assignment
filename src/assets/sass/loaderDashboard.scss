@@ -1,0 +1,163 @@
+// loader dashboard
+// @media (max-width: 991px) {
+//   .wrapper-loader {
+//     width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     z-index: 2;
+//     background-color: rgba(0,0,0,0.5);
+//     // padding-left: 280px;
+//     position: fixed;
+    
+//     .loader {
+//       position: relative;
+//       width: 70px;
+//       height: 70px;
+//     }
+    
+//     .loader:before , .loader:after{
+//       content: '';
+//       border-radius: 50%;
+//       position: absolute;
+//       inset: 0;
+//       box-shadow: 0 0 10px 2px #d6c5fd inset;
+//     }
+//     .loader:after {
+//       box-shadow: 0 3px 0 #d9214e inset;
+//       animation: rotate 2.5s linear infinite;
+//     }
+    
+//     @keyframes rotate {
+//       0% {  transform: rotate(0)}
+//       100% { transform: rotate(360deg)}
+//     }
+//   }
+// }
+
+// @media (min-width: 992px) {
+//   .wrapper-loader {
+//     width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     z-index: 2;
+//     background-color: rgba(0,0,0,0.5);
+//     padding-left: 280px;
+//     position: fixed;
+    
+//     .loader {
+//       position: relative;
+//       width: 70px;
+//       height: 70px;
+//     }
+    
+//     .loader:before , .loader:after{
+//       content: '';
+//       border-radius: 50%;
+//       position: absolute;
+//       inset: 0;
+//       box-shadow: 0 0 10px 2px #d6c5fd inset;
+//     }
+//     .loader:after {
+//       box-shadow: 0 3px 0 #d9214e inset;
+//       animation: rotate 2.5s linear infinite;
+//     }
+    
+//     @keyframes rotate {
+//       0% {  transform: rotate(0)}
+//       100% { transform: rotate(360deg)}
+//     }
+//   }
+// }
+
+@media (max-width: 991px) {
+  .wrapper-loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    // background-color: rgba(0,0,0,0.5);
+    // padding-left: 280px;
+    position: fixed;
+    
+    .loader {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      position: relative;
+      animation: rotate 1s linear infinite
+    }
+    .loader::before , .loader::after {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+      inset: 0px;
+      border-radius: 50%;
+      border: 5px solid #0098DA;
+      animation: prixClipFix 2s linear infinite ;
+    }
+    .loader::after{
+      transform: rotate3d(90, 90, 0, 180deg );
+      border-color: #0098DA;
+    }
+    @keyframes rotate {
+      0%   {transform: rotate(0deg)}
+      100%   {transform: rotate(360deg)}
+    }
+    @keyframes prixClipFix {
+        0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+        50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+        75%, 100%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper-loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    // background-color: rgba(0,0,0,0.5);
+    padding-left: 280px;
+    position: fixed;
+    
+    .loader {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      position: relative;
+      animation: rotate 1s linear infinite
+    }
+    .loader::before , .loader::after {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+      inset: 0px;
+      border-radius: 50%;
+      border: 5px solid #0098DA;
+      animation: prixClipFix 2s linear infinite ;
+    }
+    .loader::after{
+      transform: rotate3d(90, 90, 0, 180deg );
+      border-color: #0098DA;
+    }
+    @keyframes rotate {
+      0%   {transform: rotate(0deg)}
+      100%   {transform: rotate(360deg)}
+    }
+    @keyframes prixClipFix {
+        0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+        50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+        75%, 100%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    }
+  }
+}
+
